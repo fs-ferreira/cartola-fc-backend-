@@ -1,0 +1,31 @@
+docker build -t fsilvfer/teste-image:latest . --> monta uma imagem a partir da Dockerfile
+
+docker run -p 8080:80 fsilvfer/teste-image --> Executa a imagem dentro de um container em uma porta especifica
+
+docker-compose up --> Executa uma sequencia de containers dentro de um script docker-compose.yaml
+
+docker-compose down --> Finaliza-os
+
+docker ps (-a) --> Lista todos os containers em execução, -a para listar todos na maquina
+
+docker stop (container ID) --> Para a execução do container
+
+
+
+
+ <------------- Apache Kafka ------------->
+ * Broker
+ * Ferramenta de mensageria
+ * Feito para ser o mais estável possivel
+ * Comunicação entre duas aplicações de maneira ASSÍNCRONA
+
+
+ *------------*      *------------*        *------------*
+ |  Producer  | -->  |   Broker   |   -->  |  Consumer  | 
+ *------------*      |------------|        *------------*
+                     |   Ações    |
+                     | Partição 1 |
+                     | Partição 2 |
+                     | Partição 3 |
+                     *------------*  
+                    

@@ -1,0 +1,36 @@
+aula 1 --> 1:09:01 -> 100%
+
+
+aula 2 --> 45:05 
+
+Kafka 
+    - Plataforma que vai além de mensageria e filas
+    - Trabalha de forma distribuida
+    - Banco de dados interno
+    - Extremamente rápido, 2ms de throwput
+
+    -> Separado em topics (semelhante a um db)
+    -> Todos os dados ficam armazenados
+    -> Os tópicos são dividios em partitions(0, 1, 2...)
+        - Cada tópico deve ter o n° de partitions pré definido
+        - Indices == Ofsets
+
+    -> Producer --> quem manda mensagens para o Kafka (writes)
+    -> Consumer --> quem lê as mensagens do Kafka (reads)
+
+    -> Kafka Clusters
+        - Cojunto de Brokers
+        - Cada broker é um server
+        - Cada broker se responsabiliza por uma partition
+    -> Replication Factor
+    -> ZooKeeper
+        - Service Discovering
+        - Manutenção dos brokers
+
+    -> Ecossistema
+        - Kafka Connect (leitor de dbs)
+        - Connector
+        - Confluent Schema Registry
+        - Rest Proxy
+        - ksqlDB
+        - Streams

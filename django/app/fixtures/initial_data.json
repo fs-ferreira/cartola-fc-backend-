@@ -1,0 +1,99 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$yJBNVBvwdZTtmaAMy6XPHi$SGiOZe1CksO/7iXiHAFTWE8h0Km6SwGuB+3MrhOBYDQ=",
+            "last_login": "2022-12-10T17:55:11.469Z",
+            "is_superuser": true,
+            "username": "admin@user.com",
+            "first_name": "",
+            "last_name": "",
+            "email": "admin@user.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-12-10T17:54:49.202Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "app.player",
+        "pk": 1,
+        "fields": {
+            "name": "Marquinhos",
+            "initial_price": 6.0
+        }
+    },
+    {
+        "model": "app.player",
+        "pk": 2,
+        "fields": {
+            "name": "Mbappe",
+            "initial_price": 10.0
+        }
+    },
+    {
+        "model": "app.player",
+        "pk": 3,
+        "fields": {
+            "name": "Anderson",
+            "initial_price": 9.0
+        }
+    },
+    {
+        "model": "app.player",
+        "pk": 4,
+        "fields": {
+            "name": "Felipe",
+            "initial_price": 7.0
+        }
+    },
+    {
+        "model": "app.team",
+        "pk": 1,
+        "fields": {
+            "name": "Vasco"
+        }
+    },
+    {
+        "model": "app.team",
+        "pk": 2,
+        "fields": {
+            "name": "Corinthians"
+        }
+    },
+    {
+        "model": "app.myteam",
+        "pk": 1,
+        "fields": {
+            "players": [
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "app.match",
+        "pk": 1,
+        "fields": {
+            "match_date": "2022-12-10T18:28:27Z",
+            "team_a": 1,
+            "team_a_goal": 0,
+            "team_b": 2,
+            "team_b_goal": 0
+        }
+    },
+    {
+        "model": "app.action",
+        "pk": 1,
+        "fields": {
+            "player": 1,
+            "Team": 2,
+            "minutes": 42,
+            "match": 1,
+            "action": "goal"
+        }
+    }
+]
